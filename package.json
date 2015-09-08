@@ -1,10 +1,12 @@
 {
-  "name": "copay",
-  "description": "A multisignature wallet",
-  "author": "BitPay",
+  "name": "platinumpay",
+  "description": "A multisignature Platinum Crypto wallet",
+  "author": "PTcrypto",
   "version": "1.1.3",
   "keywords": [
     "wallet",
+    "platinumcoin",
+    "platinumpay",
     "copay",
     "multisignature",
     "bitcoin",
@@ -12,7 +14,7 @@
   ],
   "main": "public/index.html",
   "window": {
-    "title": "Copay - A multisignature wallet",
+    "title": "Platinum Pay - A multisignature PTX wallet",
     "icon": "./public/img/icons/icon-256.png",
     "toolbar": false,
     "show": true,
@@ -30,14 +32,14 @@
     "plugin": false
   },
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://github.com/bitpay/copay",
+  "homepage": "https://github.com/CryptArc/copay",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/bitpay/copay.git",
+    "url": "git://github.com/CryptArc/copay.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/copay/issues"
+    "url": "https://github.com/CryptArc/copay/issues"
   },
   "dependencies": {
     "express": "^4.11.2",

@@ -1,13 +1,13 @@
-<img src="https://raw.githubusercontent.com/bitpay/copay/master/public/img/logo.png" alt="Copay" width="300">
+##<img src="https://raw.githubusercontent.com/bitpay/copay/master/public/img/logo.png" alt="Copay" width="300">
 
 [![Build Status](https://secure.travis-ci.org/bitpay/copay.svg)](http://travis-ci.org/bitpay/copay)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/copay/localized.png)](https://crowdin.com/project/copay)
 
-Copay is an easy-to-use, open-source, multiplatform, multisignature, secure bitcoin wallet platform for both individuals and companies.  Copay uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
+Platinum Pay is an easy-to-use, open-source, multiplatform, multisignature, secure bitcoin based wallet platform for both individuals and companies.  Platinum Pay uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
-Binary versions of Copay are available for download at [Copay.io](https://copay.io/#download).
+##Binary versions of Copay are available for download at [Copay.io](https://copay.io/#download).
 
-## Main Features
+### Main Features
 
 - Multiple wallet creation and management in-app
 - Intuitive, multisignature security for personal or shared wallets
@@ -28,7 +28,7 @@ Binary versions of Copay are available for download at [Copay.io](https://copay.
 Clone the source:
 
 ```sh
-git clone https://github.com/bitpay/copay.git
+git clone https://github.com/CryptArc/copay.git
 cd copay
 ```
 
@@ -90,11 +90,11 @@ The Copay Firefox Extension has been deprecated and is no longer supported.
 
 ### General
 
-Copay implements a multisig wallet using [p2sh](https://en.bitcoin.it/wiki/Pay_to_script_hash) addresses.  It supports multiple wallets, each with with its own configuration, such as 3-of-5 (3 required signatures from 5 participant peers) or 2-of-3.  To create a multisig wallet shared between multiple participants, Copay requires the extended public keys of all the wallet participants.  Those public keys are then incorporated into the wallet configuration and combined to generate a payment address where funds can be sent into the wallet.  Conversely, each participant manages their own private key and that private key is never transmitted anywhere.
+Platinum Pay implements a multisig wallet using [p2sh](https://en.bitcoin.it/wiki/Pay_to_script_hash) addresses.  It supports multiple wallets, each with with its own configuration, such as 3-of-5 (3 required signatures from 5 participant peers) or 2-of-3.  To create a multisig wallet shared between multiple participants, Copay requires the extended public keys of all the wallet participants.  Those public keys are then incorporated into the wallet configuration and combined to generate a payment address where funds can be sent into the wallet.  Conversely, each participant manages their own private key and that private key is never transmitted anywhere.
 
 To unlock a payment and spend the wallet's funds, a quorum of participant signatures must be collected and assembled in the transaction.  The funds cannot be spent without at least the minimum number of signatures required by the wallet configuration (2 of 3, 3 of 5, 6 of 6, etc).  Once a transaction proposal is created, the proposal is distributed among the wallet participants for each to sign the transaction locally.  Finally, when the transaction is signed, the last signing participant will broadcast the transaction to the Bitcoin network.
 
-Copay also implements [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) to generate new addresses for peers.  The public key that each participant contributes to the wallet is a BIP32 extended public key.  As additional public keys are needed for wallet operations (to produce new addresses to receive payments into the wallet, for example) new public keys can be derived from the participants' original extended public keys.  Once again, it's important to stress that each participant keeps their own private keys locally - private keys are not shared - and are used to sign transaction proposals to make payments from the shared wallet.
+Platinum Pay also implements [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) to generate new addresses for peers.  The public key that each participant contributes to the wallet is a BIP32 extended public key.  As additional public keys are needed for wallet operations (to produce new addresses to receive payments into the wallet, for example) new public keys can be derived from the participants' original extended public keys.  Once again, it's important to stress that each participant keeps their own private keys locally - private keys are not shared - and are used to sign transaction proposals to make payments from the shared wallet.
 
 For more information regarding how addresses are generated using this procedure, see: [Structure for Deterministic P2SH Multisignature Wallets](https://github.com/bitcoin/bips/blob/master/bip-0045.mediawiki).
 
@@ -106,7 +106,7 @@ The backup also contains the key `publicKeyRing` that holds the extended public 
 
 ## Bitcore Wallet Service
 
-Copay depends on [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for blockchain information, networking and Copayer synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitpay.com`.  Switching between BWS instances is very simple and can be done with a click from within Copay.  BWS also allows Copay to interoperate with others wallet like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
+Platinum Pay depends on [Platinumcore Wallet Service](https://github.com/CryptArc/bitcore-wallet-service) (PWS) for blockchain information, networking and PTXpayer synchronization.  A PWS instance can be setup and operational within minutes or you can use a public instance like `https://pws.platinumcrypto.com`.  Switching between PWS instances is very simple and can be done with a click from within PTpay.  PWS also allows PTpay to interoperate with others wallet like [Platinumcore Wallet CLI] (https://github.com/CryptArc/bitcore-wallet).
 
 ## Translations
 Copay uses standard gettext PO files for translations and [Crowdin](https://crowdin.com/project/copay) as the front-end tool for translators.  To join our team of translators, please create an account at [Crowdin](https://crowdin.com) and translate the Copay documentation and application text into your native language.
@@ -147,9 +147,9 @@ We release bug fixes as soon as possible for all platforms.  Usually around a we
 
 * [BitPay Labs](https://labs.bitpay.com/c/copay)
   * Post a question in our discussion forums
-* [GitHub Issues](https://github.com/bitpay/copay/issues)
+* [GitHub Issues](https://github.com/CryptArc/copay/issues)
   * Open an issue if you are having problems with this project
-* [Email Support](mailto:support@bitpay.com)
+* [Email Support](mailto:support@platinumcrypto.com)
   * Our dedicated support team is always ready to help
 
 ## License

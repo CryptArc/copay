@@ -3,9 +3,9 @@
 [![Build Status](https://secure.travis-ci.org/bitpay/copay.svg)](http://travis-ci.org/bitpay/copay)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/copay/localized.png)](https://crowdin.com/project/copay)
 
-Platinum Pay is an easy-to-use, open-source, multiplatform, multisignature, secure bitcoin based wallet platform for both individuals and companies.  Platinum Pay uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
+Platinum Pay is an easy-to-use, open-source, multiplatform, multisignature, secure bitcoin based wallet platform for both individuals and companies.  Platinum Pay uses [PTcore Wallet Service](https://github.com/CryptArc/bitcore-wallet-service) (PWS) for peer synchronization and network interfacing.
 
-##Binary versions of Copay are available for download at [Copay.io](https://copay.io/#download).
+Binary versions of PTpay are available for download at [Platinumcrypto.com](https://platinumcrypto.com/#download).
 
 ### Main Features
 
